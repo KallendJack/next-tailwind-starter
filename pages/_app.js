@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import Head from 'next/head'
+import '../css/_main.scss'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const App = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
 
-export default MyApp
+export default App
