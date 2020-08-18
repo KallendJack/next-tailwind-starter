@@ -4,7 +4,17 @@ module.exports = {
     content: ['./pages/**/*.js', './components/**/*.js'],
   },
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        center: true,
+        padding: {
+          default: '1rem',
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+        },
+      },
+    },
   },
   variants: {},
   plugins: [require('@tailwindcss/custom-forms')],
