@@ -1,12 +1,14 @@
-import Head from 'next/head'
+import Layout from '../components/layouts/Layout'
+import { useFetchUser } from '../lib/user'
 
 const Index = () => {
+  const { user, loading } = useFetchUser()
+
   return (
     <>
-      <Head>
-        <title>Next Tailwind Starter</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Layout user={user} loading={loading}>
+        <section>Hello</section>
+      </Layout>
     </>
   )
 }
