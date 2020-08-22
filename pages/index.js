@@ -6,9 +6,7 @@ const Index = () => {
 
   return (
     <>
-      <Layout user={user} loading={loading}>
-        <section>Hello</section>
-      </Layout>
+      <Layout user={user} loading={loading}></Layout>
     </>
   )
 }
